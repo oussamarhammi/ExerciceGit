@@ -13,7 +13,12 @@ namespace CrazyBooks_Models.Models
         public string Event { get; set; }
         public string Commentaire { get; set; }
 
+<<<<<<< HEAD
 
         public ICollection<CalenderEvent> CalenderEvent { get; set; }
+=======
+        public CalenderEvent CalenderEvent_Id { get; set; }
+        public CalenderEvent CalenderEvent { get; set; }
+>>>>>>> KPL_BOOKING
     }
 }

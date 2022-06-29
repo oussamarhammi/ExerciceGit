@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CrazyBooks_Models.Models
 {
-   public class CalenderEvent
+    public class CalenderEvent
     {
         [Key]
         public int Id { get; set; }
@@ -16,11 +16,15 @@ namespace CrazyBooks_Models.Models
         public string Event { get; set; }
         public string Commentaire { get; set; }
 
+<<<<<<< HEAD
         [ForeignKey("Booking")]
         public int Booking_Id { get; set; }
         //Propriété de navigation 1 à plusieurs, côté 1
         public Booking Booking { get; set; }
 
+=======
+        public ICollection<Booking> Bookings { get; set; }
+>>>>>>> KPL_BOOKING
     }
 
 }
